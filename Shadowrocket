@@ -45,6 +45,25 @@ RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ru
 RULE-SET,https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/ChinaIP.list,DIRECT
 
 URL-REGEX,^https:\/\/.+\.googlevideo\.com\/.+&oad,REJECT
+# QQ音乐去广告
+DOMAIN,adstats.tencentmusic.com,REJECT
+DOMAIN,ad.tencentmusic.com,REJECT
+DOMAIN,adcdn.tencentmusic.com,REJECT
+DOMAIN,adexpo.tencentmusic.com,REJECT
+DOMAIN,adclick.tencentmusic.com,REJECT
+DOMAIN,otheve.beacon.qq.com,REJECT
+DOMAIN,monitor.music.qq.com,REJECT
+DOMAIN,stat.y.qq.com,REJECT
+DOMAIN,tmead.y.qq.com,REJECT
+DOMAIN,oth.str.mdt.qq.com,REJECT
+DOMAIN,h.trace.qq.com,REJECT
+DOMAIN,tmead.y.qq.com,REJECT
+DOMAIN-SUFFIX,imtmp.net,REJECT
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN,p.l.qq.com,REJECT
+DOMAIN,us.l.qq.com,REJECT
+DOMAIN,tangram.e.qq.com,REJECT
+
 DOMAIN-SUFFIX,tiktokv.com,PROXY
 DOMAIN-SUFFIX,musical.ly,PROXY
 
