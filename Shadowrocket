@@ -74,6 +74,18 @@ FINAL,PROXY
 
 
 [URL Rewrite]
+
+
+#tiktok解锁
+(?<=_region=)CN(?=&) JP 307
+(?<=&mcc_mnc=)4 2 307
+^(https?:\/\/(tnc|dm)[\w-]+\.\w+\.com\/.+)(\?)(.+) $1$3 302
+(^https?:\/\/*\.\w{4}okv.com\/.+&.+)(\d{2}\.3\.\d)(.+) $118.0$3 302
+
+
+# ——————————————————————————分割线——————————————————————————————————————————
+
+
 #波点音乐
 ^http:\/\/bd-api\.kuwo\.cn\/api\/service\/resource\/musicResource\/.+ _ reject
 #波点音乐
@@ -123,6 +135,6 @@ grow解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-
 石墨文档解锁=type=http-response,pattern=^https:\//shimo.im\/lizard-api\/users\/me,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/shimo.js
 
 [MITM]
-hostname = %APPEND% spclient.wg.spotify.com,buy.itunes.apple.com,notability.com,api.coolapk.com,api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com,*account.wps.cn, *account.wps.com,account.wps.cn,*account.wps.com,ap*.intsig.net,biz.caiyunapp.com,pan.baidu.com,bmall.camera360.com,vsco.co,api.polaxiong.com,api.shayujizhang.com,*.kuwo.cn, *.lrts.me,shimo.im,baimiao.uzero.cn
+hostname = %APPEND% spclient.wg.spotify.com,buy.itunes.apple.com,notability.com,api.coolapk.com,api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com,*account.wps.cn, *account.wps.com,account.wps.cn,*account.wps.com,ap*.intsig.net,biz.caiyunapp.com,pan.baidu.com,bmall.camera360.com,vsco.co,api.polaxiong.com,api.shayujizhang.com,*.kuwo.cn, *.lrts.me,shimo.im,baimiao.uzero.cn,*.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
 
 
