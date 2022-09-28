@@ -55,9 +55,20 @@ FINAL,PROXY
 
 
 [URL Rewrite]
-
+#波点音乐
+^http:\/\/bd-api\.kuwo\.cn\/api\/service\/resource\/musicResource\/.+ _ reject
+#波点音乐
+^https:\/\/bodiancdn\.kuwo\.cn\/.+\.mp4 _ reject
+#波点音乐
+^http:\/\/bd-api\.kuwo\.cn\/api\/service\/resource\/view\?uid _ reject
+#波点音乐
+^http:\/\/bd-api\.kuwo\.cn\/api\/service\/music\/recommendList\?uid _ reject
 
 [Script]
+Spotify Premium= type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ ,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10
 
 
 [MITM]
+hostname = %APPEND% spclient.wg.spotify.com
+
+
