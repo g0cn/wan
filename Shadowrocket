@@ -77,13 +77,17 @@ Notability解锁订阅= type=http-response,script-path=https://raw.githubusercon
 
 WPS办公𝙫𝙞𝙥 = type=http-response,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,pattern=^https://account.wps.*/api/users/,max-size=131072,requires-body=true,timeout=10,enable=true
 
-酷我音乐𝙫𝙞𝙥 = type=http-response,pattern=^https?:\/\/vip1\.kuwo\.cn\/(vip\/v2\/user\/vip|vip\/spi/mservice),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/kwyy.js
+克拉壁纸= type=http-response,pattern=^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) ,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/clarity.js
+
+彩云天气SVIP= type=http-response,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) ,requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caiyun.js
+
+酷我音乐𝙫𝙞𝙥= type=http-response,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js,pattern=^https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,max-size=131072,requires-body=true,timeout=10,script-update-interval=0,enable=true
 
 全能扫描 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/camscanner.js,type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-update-interval=0
 
-Day One = type=http-response,pattern=^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/dayone.js,script-update-interval=0
+白描解锁 =type=http-response,pattern=^https?:\/\/baimiao\.uzero\.cn\/api\/v\d\.user\/appLaunchWithUser$,requires-body=1,script-path=https://raw.githubusercontent.com/iEwha/Profiles/master/Script/baimiao.js
 
-彩云天气 = type=http-response,requires-body=1,max-size=0,pattern=https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/cytq.js
+Day One = type=http-response,pattern=^https:\/\/dayone\.(me|app)\/api\/(users|v2\/users\/(account-status|receipt))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/dayone.js,script-update-interval=0
 
 百度云盘 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js,script-update-interval=0
 
@@ -97,8 +101,9 @@ grow解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-
 
 鲨鱼记账 = type=http-response,script-path=https://raw.githubusercontent.com/Liquor030/Sub_Ruleset/master/Script/shayujizhang.js,pattern=^https?:\/\/api\.shayujizhang\.com\/account\/detail\/,max-size=131072,requires-body=true,timeout=10,enable=true
 
+石墨文档解锁=type=http-response,pattern=^https:\//shimo.im\/lizard-api\/users\/me,requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/shimo.js
 
 [MITM]
-hostname = %APPEND% spclient.wg.spotify.com,buy.itunes.apple.com,notability.com,api.coolapk.com,api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com,*account.wps.cn, *account.wps.com,vip1.kuwo.cn,account.wps.cn,*account.wps.com,ap*.intsig.net,biz.caiyunapp.com,pan.baidu.com,bmall.camera360.com,vsco.co,api.polaxiong.com,api.shayujizhang.com
+hostname = %APPEND% spclient.wg.spotify.com,buy.itunes.apple.com,notability.com,api.coolapk.com,api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com,*account.wps.cn, *account.wps.com,account.wps.cn,*account.wps.com,ap*.intsig.net,biz.caiyunapp.com,pan.baidu.com,bmall.camera360.com,vsco.co,api.polaxiong.com,api.shayujizhang.com,*.kuwo.cn, *.lrts.me,shimo.im,baimiao.uzero.cn
 
 
